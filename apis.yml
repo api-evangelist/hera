@@ -1,8 +1,27 @@
 aid: hera
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hera.png
 name: Hera
-description: 'Hera is a company surfaced as a portfolio company of accel, bain-capital-ventures and added
-  to the API Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Hera is a Medicare-covered care-management company that pairs families with dedicated
+  senior-care experts (called "Heroes") to coordinate healthcare for aging parents. Heroes handle
+  Medicare/Medicaid and insurance navigation, appointment and medical coordination, pharmacy and
+  benefits administration, and ongoing chronic-care support, with most families paying $0 out of
+  pocket because services are covered by Original Medicare. Founded by Jenny Lee after a personal
+  family dementia-caregiving experience, Hera augments its human care coordinators with an internal
+  AI platform ("Juno") and is backed by Accel and Bain Capital Ventures. As of this enrichment pass
+  Hera operates a consumer (B2C) healthcare service and publishes no public developer portal, API,
+  or specification surface, so the technical-artifact tiers of the enrichment pipeline are not
+  applicable.'
 url: https://raw.githubusercontent.com/api-evangelist/hera/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +32,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-- Ai
+- AI
+- Healthcare
+- HealthTech
+- Elder Care
+- Care Management
+- Medicare
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +48,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/hera-domain-security.yml
 - type: Website
   url: https://hellohera.com/
+- type: Blog
+  url: https://hellohera.com/guide/all
+- type: Support
+  url: https://hellohera.com/faq
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
